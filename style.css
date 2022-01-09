@@ -7,6 +7,7 @@ body {
     background-size: cover;
     background-color: hsl(257, 40%, 49%);
     font-family: 'Poppins', sans-serif;
+    display: block;
 }
 
 header {
@@ -18,7 +19,7 @@ header {
 
 header .img {
     height: 2px;
-    width: 100px;
+    width: 50px;
 }
 
 .container {
@@ -70,29 +71,70 @@ button {
 }
 
 @media only screen and (max-width: 375px){
-    body {
-        background-image: url(images/bg-mobile.svg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-color: hsl(257, 40%, 49%);
-        font-family: 'Poppins', sans-serif;
-    }
-    
-    .container {
-        margin-right: 10px;
-        margin-left: 10px;
-    }
-    
-    a {
-        text-decoration: none;
-        color:  hsl(257, 40%, 49%);
-        font-size: 16px;
-    }
-    
-    button {
-        width: 200px;
-        height: 50px;
-        border-radius: 30px;
-        border: none;
-    }
+   body {
+       background-image: url(images/bg-mobile.svg);
+       background-repeat: no-repeat;
+       background-size: contain;
+   }
+
+   header {
+       margin: 0;
+   }
+
+   header img {
+        width: 150px;
+        height: 110px;
+        margin-left: 30px;
+        margin-bottom: 0;
+   }
+
+   .container {
+       display: block;
+
+   }
+
+   .col-1 {
+       display: block;
+       float: none;
+       margin: 0;
+       padding: 0;
+       width: 100%;
+       margin-left: 30px;
+       margin-right: 20px;
+   }
+
+   .col-1 img {
+       height: 220px;
+       width: 80%;
+       padding: 0;
+       margin: 0;
+   }
+
+   .col-2 {
+       display: block;
+       float: none;
+       width: 100%;
+   }
+
+   .col-2 h1 {
+       width: 250px;
+       font-size: 20px; 
+       text-align: center;
+       justify-self: center;
+       margin-left: 50px;
+       margin-right: 20px;
+   }
+
+   .col-2 p {
+       width: 300px;
+       margin-left: 30px;
+       margin-right: 20px;
+       font-size: 14px;
+       text-align: center;
+       justify-content: center;
+   }
+
+   button {
+       margin-left: 70px;
+   }
 }
